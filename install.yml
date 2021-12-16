@@ -1,6 +1,6 @@
     - hosts: all
       tasks:
-        - name: install apache2 pour debian
+        - name: install httpd ou apache2
           package:
             name: "webserver" 
             
