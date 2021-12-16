@@ -4,5 +4,6 @@
       package:
       name: 
         - httpd
+        - git
       state: present
     
