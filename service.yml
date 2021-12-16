@@ -3,6 +3,6 @@
   
        - name: Démarrage du service
          service:
-           name: "webserver"
+           name: "{{webserver}}"
            state: started
            enabled: true
