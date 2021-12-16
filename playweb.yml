@@ -1,7 +1,8 @@
 - hosts: 192.168.33.10
   tasks:
-    - name : installation apache
+    - name: installation apache
       package:
-      name: httpd
+      name: 
+        - httpd
       state: present
     
