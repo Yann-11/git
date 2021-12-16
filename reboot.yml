@@ -1,1 +1,3 @@
-- reboot:
+- hosts: all
+  tasks:
+    - reboot:
