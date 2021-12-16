@@ -1,14 +1,16 @@
-    - name: install apache2 pour debian
-      package:
-        name: apache2
-      when: ansible_os_family == 'Debian' 
+    - hosts: all
+      tasks:
+        - name: install apache2 pour debian
+          package:
+            name: apache2
+          when: ansible_os_family == 'Debian' 
 
-    - name: install httpd pour centos8
-      package:
-        name: httpd
-      when: ansible_os_family == 'RedHat'  
+        - name: install httpd pour centos8
+          package:
+            name: httpd
+          when: ansible_os_family == 'RedHat'  
       
-    - name: Installer quelques dépendances 
-      package:
-        name: 
-          - git
+        - name: Installer quelques dépendances 
+          package:
+            name: 
+              - git
