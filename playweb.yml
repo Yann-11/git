@@ -6,4 +6,12 @@
          - httpd
          - git
        state: present
+       
+    - name: lancer apache
+      service:
+        name:
+          - httpd
+        state: started
+        enabled: true
+        
     
