@@ -2,6 +2,6 @@
   tasks:
   
   - name: template dans motd
-      template:
-        src: motd.tpl
-        dest: /etc/motd
+    template:
+      src: motd.tpl
+      dest: /etc/motd
