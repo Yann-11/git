@@ -1,5 +1,7 @@
+- hosts: all
+  tasks:
+  
 - name: template dans motd
-  tasks: 
-    - template:
-        src: motd.tpl
-        dest: /etc/motd
+    template:
+      src: motd.tpl
+      dest: /etc/motd
