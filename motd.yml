@@ -1,0 +1,4 @@
+- name: template dans motd
+  template:
+    src: motd.tps
+    dest: /etc/motd
